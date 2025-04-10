@@ -10,7 +10,7 @@ if (isset($_POST['btn_login'])) {
         } else {
             $partten = "/^[A-Za-z0-9_\.](6,32)$/";
             if (!preg_match($partten, $_POST['username'], $matchs))
-                $error['username'] = "Username bạn vừa nhập không đúng định dạng";
+                $error['username'] = "Lưu ";
             else {
                 $username = $_POST['username'];
                 echo $username;
